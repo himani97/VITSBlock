@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.vits_block.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Carrom Count"
+                    android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:text="+"
+                        android:onClick="increment"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:id="@+id/quantity_c"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="0" />
+                    <Button
+                        android:text="-"
+                        android:onClick="decrement"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <!--<Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:text="Available"
+                    android:textSize="20sp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="TableTennis"
+                    android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:text="+"
+                        android:onClick="increment_tt"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:id="@+id/quantity_tt"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="0" />
+                    <Button
+                        android:text="-"
+                        android:onClick="decrement_tt"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+                <!--<Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:text="Available"
+                    android:textSize="20sp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Karaoke"
+                    android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:text="+"
+                        android:onClick="increment_k"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:id="@+id/quantity_k"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="0" />
+                    <Button
+                        android:text="-"
+                        android:onClick="decrement_k"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <!--<Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:text="Available"
+                    android:textSize="20sp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Play Station"
+                    android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:text="+"
+                        android:onClick="increment_ps"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:id="@+id/quantity_ps"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="0" />
+                    <Button
+                        android:text="-"
+                        android:onClick="decrement_ps"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <!--<Switch
+                    android:id="@+id/switch4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:text="Available"
+                    android:textSize="20sp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="FoosBall"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:text="+"
+                        android:onClick="increment_f"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:id="@+id/quantity_f"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="0" />
+                    <Button
+                        android:text="-"
+                        android:onClick="decrement_f"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <!--<Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:text="Available"
+                    android:textSize="20sp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Pool"
+                    android:textSize="30sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:text="+"
+                        android:onClick="increment_p"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:id="@+id/quantity_p"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="0" />
+                    <Button
+                        android:text="-"
+                        android:onClick="decrement_p"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <!--<Switch
+                    android:id="@+id/switch6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:text="Available"
+                    android:textSize="20sp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Chess"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:text="+"
+                        android:onClick="increment_ch"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:id="@+id/quantity_ch"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:text="0" />
+                    <Button
+                        android:text="-"
+                        android:onClick="decrement_ch"
+                        android:textSize="20sp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+                <!--<Switch
+                    android:id="@+id/switch7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:text="Available"
+                    android:textSize="20sp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
